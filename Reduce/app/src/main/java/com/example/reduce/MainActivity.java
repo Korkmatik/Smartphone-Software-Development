@@ -2,6 +2,8 @@ package com.example.reduce;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -39,13 +41,29 @@ public class MainActivity extends AppCompatActivity {
                 String strNumerator = etNumerator.getText().toString();
                 String strDenominator = etDenominator.getText().toString();
 
+                AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(MainActivity.this);
+
+                alertDialogBuilder.setPositiveButton("Okay", (dialog, which) -> {});
+
                 if (!CheckNumber.check(strNumerator)) {
-                    etNumerator.setError("Zähler muss eine Zahl sein");
+                    String message = "Zähler muss eine Zahl sein";
+                    etNumerator.setError(message);
+
+                    alertDialogBuilder.setMessage(message);
+
+                    AlertDialog alertDialog = alertDialogBuilder.create();
+                    alertDialog.show();
                     return;
                 }
 
                 if (!CheckNumber.check(strDenominator)) {
-                    etDenominator.setError("Nenner muss eine Zahl sein");
+                    String message = "Nenner muss eine Zahl sein";
+                    etDenominator.setError(message);
+
+                    alertDialogBuilder.setMessage(message);
+
+                    AlertDialog alertDialog = alertDialogBuilder.create();
+                    alertDialog.show();
                     return;
                 }
 
