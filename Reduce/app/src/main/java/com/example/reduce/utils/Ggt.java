@@ -14,9 +14,6 @@ public class Ggt {
                 ggt = divisor;
                 divisor = rest;
             } while (rest > 0);
-
-            zaehler /= ggt;
-            nenner /= ggt;
         }
 
         return ggt;

@@ -8,6 +8,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
+import com.example.reduce.utils.CheckNumber;
 import com.example.reduce.utils.Ggt;
 
 public class MainActivity extends AppCompatActivity {
@@ -35,8 +36,21 @@ public class MainActivity extends AppCompatActivity {
         btnCalculate.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                int numerator = Integer.parseInt(etNumerator.getText().toString());
-                int denominator = Integer.parseInt(etDenominator.getText().toString());
+                String strNumerator = etNumerator.getText().toString();
+                String strDenominator = etDenominator.getText().toString();
+
+                if (!CheckNumber.check(strNumerator)) {
+                    etNumerator.setError("Zähler muss eine Zahl sein");
+                    return;
+                }
+
+                if (!CheckNumber.check(strDenominator)) {
+                    etDenominator.setError("Nenner muss eine Zahl sein");
+                    return;
+                }
+
+                int numerator = Integer.parseInt(strNumerator);
+                int denominator = Integer.parseInt(strDenominator);
 
                 int ggt = Ggt.calculate(numerator, denominator);
                 numerator /= ggt;
