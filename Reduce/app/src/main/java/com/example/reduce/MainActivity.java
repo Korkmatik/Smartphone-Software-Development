@@ -21,10 +21,17 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        FindViews();
+        SetCalculateAction();
+    }
+
+    private void FindViews() {
         btnCalculate = findViewById(R.id.btn_calculate);
         etNumerator = findViewById(R.id.zaehler);
         etDenominator = findViewById(R.id.nenner);
+    }
 
+    private void SetCalculateAction() {
         btnCalculate.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
