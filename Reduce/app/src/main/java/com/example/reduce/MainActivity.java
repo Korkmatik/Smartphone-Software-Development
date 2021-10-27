@@ -42,7 +42,6 @@ public class MainActivity extends AppCompatActivity {
                 String strDenominator = etDenominator.getText().toString();
 
                 AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(MainActivity.this);
-
                 alertDialogBuilder.setPositiveButton("Okay", (dialog, which) -> {});
 
                 if (!CheckNumber.check(strNumerator)) {
