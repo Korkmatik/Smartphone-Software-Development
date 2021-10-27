@@ -70,6 +70,17 @@ public class MainActivity extends AppCompatActivity {
                 int numerator = Integer.parseInt(strNumerator);
                 int denominator = Integer.parseInt(strDenominator);
 
+                if (denominator == 0) {
+                    String message = "Nenner darf keine 0 sein";
+                    etDenominator.setError(message);
+
+                    alertDialogBuilder.setMessage(message);
+
+                    AlertDialog alertDialog = alertDialogBuilder.create();
+                    alertDialog.show();
+                    return;
+                }
+
                 int ggt = Ggt.calculate(numerator, denominator);
                 numerator /= ggt;
                 denominator /= ggt;
