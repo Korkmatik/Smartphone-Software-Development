@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Lifecycle">
         <activity
-            android:name=".MainActivity"
+            android:name=".LifeActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
