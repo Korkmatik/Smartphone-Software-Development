@@ -15,6 +15,7 @@
         android:ems="10"
         android:hint="Number 1"
         android:inputType="textPersonName"
+        android:minHeight="48dp"
         android:textSize="20sp" />
 
     <TextView
@@ -30,11 +31,13 @@
         android:ems="10"
         android:hint="Number 2"
         android:inputType="textPersonName"
+        android:minHeight="48dp"
         android:textSize="20sp" />
 
     <Button
         android:id="@+id/btn_calculate"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
         android:text="Calculate" />
 </LinearLayout>
