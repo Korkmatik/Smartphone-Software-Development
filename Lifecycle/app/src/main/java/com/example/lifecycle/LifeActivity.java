@@ -7,7 +7,6 @@ import android.os.Bundle;
 import android.os.PersistableBundle;
 import android.util.Log;
 
-import javax.security.auth.login.LoginException;
 
 public class LifeActivity extends AppCompatActivity {
 
