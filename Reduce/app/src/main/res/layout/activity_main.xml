@@ -11,9 +11,11 @@
         android:id="@+id/zaehler"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:background="@android:drawable/editbox_background"
         android:ems="10"
         android:hint="Number 1"
-        android:inputType="textPersonName" />
+        android:inputType="textPersonName"
+        android:textSize="20sp" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -24,9 +26,11 @@
         android:id="@+id/nenner"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:background="@android:drawable/editbox_background"
         android:ems="10"
         android:hint="Number 2"
-        android:inputType="textPersonName" />
+        android:inputType="textPersonName"
+        android:textSize="20sp" />
 
     <Button
         android:id="@+id/btn_calculate"
