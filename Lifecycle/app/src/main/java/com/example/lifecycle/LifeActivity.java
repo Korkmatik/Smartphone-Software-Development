@@ -6,16 +6,22 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.os.PersistableBundle;
 import android.util.Log;
+import android.widget.TextView;
 
 
 public class LifeActivity extends AppCompatActivity {
 
     public final static String TAG = "LifeActivity";
+    private static int activityCount = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.life);
+
+        activityCount++;
+        TextView txtActivityCount = findViewById(R.id.txtActivityCounter);
+        txtActivityCount.setText("Activity Count: " + activityCount);
 
         Log.i(TAG, "onCreate: " + (savedInstanceState == null ? "NEW" : "RESTORED"));
     }
