@@ -3,7 +3,6 @@ package com.example.reduce;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.AlertDialog;
-import android.content.DialogInterface;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -42,10 +41,10 @@ public class MainActivity extends AppCompatActivity {
                 String strDenominator = etDenominator.getText().toString();
 
                 AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(MainActivity.this);
-                alertDialogBuilder.setPositiveButton("Okay", (dialog, which) -> {});
+                alertDialogBuilder.setPositiveButton(getString(R.string.okay), (dialog, which) -> {});
 
                 if (!CheckNumber.check(strNumerator)) {
-                    String message = "Zähler muss eine Zahl sein";
+                    String message = getString(R.string.numberator_not_number_error);
                     etNumerator.setError(message);
 
                     alertDialogBuilder.setMessage(message);
@@ -56,7 +55,7 @@ public class MainActivity extends AppCompatActivity {
                 }
 
                 if (!CheckNumber.check(strDenominator)) {
-                    String message = "Nenner muss eine Zahl sein";
+                    String message = getString(R.string.denominator_not_number_error);
                     etDenominator.setError(message);
 
                     alertDialogBuilder.setMessage(message);
@@ -70,7 +69,7 @@ public class MainActivity extends AppCompatActivity {
                 int denominator = Integer.parseInt(strDenominator);
 
                 if (denominator == 0) {
-                    String message = "Nenner darf keine 0 sein";
+                    String message = getString(R.string.denominator_zero_error);
                     etDenominator.setError(message);
 
                     alertDialogBuilder.setMessage(message);

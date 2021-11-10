@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">Reduce</string>
+    <string name="hint_numerator">Number 1</string>
+    <string name="line" translatable="false">________________________________</string>
+    <string name="hint_denominator">Number 2</string>
+    <string name="btn_calculate">Calculate</string>
+    <string name="numberator_not_number_error">Numerator must be a number</string>
+    <string name="okay">Okay</string>
+    <string name="denominator_not_number_error">Denominator must be a number</string>
+    <string name="denominator_zero_error">Denominator must not be zero</string>
 </resources>

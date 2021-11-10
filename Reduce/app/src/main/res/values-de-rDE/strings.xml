@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Reduce</string>
+    <string name="hint_numerator">Zahl 1</string>
+    <string name="hint_denominator">Zahl 2</string>
+    <string name="btn_calculate">Berechne</string>
+    <string name="numberator_not_number_error">Zähler muss eine Zahl sein</string>
+    <string name="okay">Okay</string>
+    <string name="denominator_not_number_error">Nenner muss eine Zahl sein</string>
+    <string name="denominator_zero_error">Nenner darf keine 0 sein</string>
+</resources>

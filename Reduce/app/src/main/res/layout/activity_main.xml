@@ -13,15 +13,16 @@
         android:layout_height="wrap_content"
         android:background="@android:drawable/editbox_background"
         android:ems="10"
-        android:hint="Number 1"
+        android:hint="@string/hint_numerator"
         android:inputType="textPersonName"
         android:minHeight="48dp"
-        android:textSize="20sp" />
+        android:textSize="20sp"
+        style="@style/hint_text" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="________________________________" />
+        android:text="@string/line" />
 
     <EditText
         android:id="@+id/nenner"
@@ -29,15 +30,16 @@
         android:layout_height="wrap_content"
         android:background="@android:drawable/editbox_background"
         android:ems="10"
-        android:hint="Number 2"
+        android:hint="@string/hint_denominator"
         android:inputType="textPersonName"
         android:minHeight="48dp"
-        android:textSize="20sp" />
+        android:textSize="20sp"
+        style="@style/hint_text" />
 
     <Button
         android:id="@+id/btn_calculate"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
-        android:text="Calculate" />
+        android:text="@string/btn_calculate" />
 </LinearLayout>
