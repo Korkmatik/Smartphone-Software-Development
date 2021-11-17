@@ -3,9 +3,12 @@ package com.example.reduce;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.AlertDialog;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
 import android.widget.Button;
 import android.widget.EditText;
 
@@ -18,6 +21,9 @@ public class MainActivity extends AppCompatActivity {
     EditText etNumerator;
     EditText etDenominator;
 
+    private Animation rotate;
+    private MediaPlayer btnSound;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -25,6 +31,16 @@ public class MainActivity extends AppCompatActivity {
 
         FindViews();
         SetCalculateAction();
+        loadAnimation();
+        loadSound();
+    }
+
+    private void loadSound() {
+        btnSound = MediaPlayer.create(this, R.raw.fallbackring);
+    }
+
+    private void loadAnimation() {
+        rotate = AnimationUtils.loadAnimation(this, R.anim.rotate);
     }
 
     private void FindViews() {
@@ -87,6 +103,9 @@ public class MainActivity extends AppCompatActivity {
 
                 etNumerator.setText("" + numerator);
                 etDenominator.setText("" + denominator);
+
+                v.startAnimation(rotate);
+                btnSound.start();
             }
         });
     }
