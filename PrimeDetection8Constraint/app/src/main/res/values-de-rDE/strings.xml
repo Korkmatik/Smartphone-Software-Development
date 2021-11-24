@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Prime Detection</string>
+    <string name="instruction">Ganzzahl eingeben (>1)</string>
+    <string name="prime_number_hint">Ganzzahl</string>
+    <string name="btn_text">Primzahl übeprüfen</string>
+    <string name="is_prime">ist eine Primzahl</string>
+    <string name="not_prime">ist keine Primzahl</string>
+    <string name="not_integer">ist keine Ganzzahl</string>
+    <string name="divisor">Divisor</string>
+</resources>
