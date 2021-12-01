@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Prime Detection</string>
+    <string name="instruction">Ganzzahl eingeben (>1)</string>
+    <string name="prime_number_hint">Ganzzahl</string>
+    <string name="btn_text">Primzahl übeprüfen</string>
+    <string name="is_prime">ist eine Primzahl (https://de.wikipedia.org/wiki/Primzahl)</string>
+    <string name="not_prime">ist keine Primzahl (https://de.wikipedia.org/wiki/Primzahl)</string>
+    <string name="not_integer">ist keine Ganzzahl</string>
+    <string name="divisor">Divisor</string>
+    <string name="huge_prime_number_description">Hier können Sie sich große Primzahlen anzeigen lassen</string>
+</resources>

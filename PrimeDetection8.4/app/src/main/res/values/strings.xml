@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Prime Detection</string>
+    <string name="instruction">Enter an integer (>1)</string>
+    <string name="prime_number_hint">Integer</string>
+    <string name="btn_text">Prime Check</string>
+    <string name="is_prime">is a prime (https://en.wikipedia.org/wiki/Prime_number)</string>
+    <string name="not_prime">is not a prime (https://en.wikipedia.org/wiki/Prime_number)</string>
+    <string name="not_integer">is not an integer</string>
+    <string name="ok" translatable="false">OK</string>
+    <string name="divisor">Divisor</string>
+    <string name="huge_prime_number_description">Use this Edit Text for suggestions of huge prime numbers</string>
+</resources>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:gravity="center">
+
+        <TextView
+            android:id="@+id/lblInstruction"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/instruction"
+            android:typeface="normal"
+            android:textSize="14sp"/>
+
+        <EditText
+            android:id="@+id/etPrimeNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:autoText="false"
+            android:background="@android:drawable/editbox_background_normal"
+            android:backgroundTint="#EFD4A7"
+            android:editable="false"
+            android:ems="10"
+            android:hint="@string/prime_number_hint"
+            android:inputType="textAutoComplete"
+            android:textStyle="bold|italic" />
+
+        <Button
+            android:id="@+id/btnCheckPrime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/btn_text"
+            android:layout_marginTop="14sp"
+            />
+
+
+
+        <TextView
+            android:id="@+id/lblResult"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:textSize="14sp"
+            android:layout_marginTop="14sp" />
+
+        <AutoCompleteTextView
+            android:id="@+id/autoCompleteTextView"
+            android:layout_width="300sp"
+            android:layout_height="wrap_content"
+            android:hint="Huge Prime Numbers"
+            android:layout_marginTop="16sp"
+            android:background="#E91E63"
+            android:contentDescription="@string/huge_prime_number_description"
+            />
+
+</LinearLayout>
