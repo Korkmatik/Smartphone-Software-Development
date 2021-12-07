@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Bedienelemente</string>
+    <string name="account_balance">Account Balance</string>
+    <string name="account_balance_description">This Button prints your current account balance</string>
+</resources>
