@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Demo-Umschalter</string>
+    <string name="bold">Bold</string>
+    <string name="italic">Italic</string>
+    <string name="sans_serif">Sans Serif</string>
+    <string name="serif">Serif</string>
+    <string name="sample_text">Sample Text</string>
+</resources>
