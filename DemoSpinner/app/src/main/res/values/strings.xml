@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">DemoSpinner</string>
+    <string name="choose_car_brand">Choose your favorite car brand:</string>
+    <string-array name="car_brands">
+        <item>Please select an item...</item>
+        <item>Audi</item>
+        <item>BMW</item>
+        <item>Ford</item>
+        <item>Mercedes-Benz</item>
+        <item>Opel</item>
+        <item>Porsche</item>
+        <item>Volkswagen</item>
+    </string-array>
+</resources>
