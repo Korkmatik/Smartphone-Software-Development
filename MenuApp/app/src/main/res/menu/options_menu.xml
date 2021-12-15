@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/itAction1"
+        android:icon="@android:drawable/ic_menu_save"
+        android:title="Aktion 1"
+        app:showAsAction="never|withText"
+        android:onClick="menuclick" />
+    <item
+        android:id="@+id/itAction2"
+        android:icon="@android:drawable/ic_menu_compass"
+        android:title="Aktion 2"
+        app:showAsAction="never|withText"
+        android:onClick="menuclick" />
+    <item
+        android:id="@+id/itAction3"
+        android:icon="@android:drawable/ic_menu_help"
+        android:title="Aktion 3"
+        app:showAsAction="ifRoom|withText"
+        android:onClick="menuclick" />
+</menu>
