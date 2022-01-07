@@ -1,5 +1,6 @@
 package com.example.reduce2;
 
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
@@ -27,8 +28,20 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     @Override
     public void onClick(View v) {
-        int zaehler = Integer.parseInt(txtZahler.getText().toString());
-        int nenner = Integer.parseInt(txtNenner.getText().toString());
+        int zaehler, nenner;
+        try {
+            zaehler = Integer.parseInt(txtZahler.getText().toString());
+            nenner = Integer.parseInt(txtNenner.getText().toString());
+        } catch (NumberFormatException exception) {
+            AlertDialog.Builder builder = new AlertDialog.Builder(this);
+            builder.setMessage("Zähler und Nenner müssen ein Integer Wert sein!");
+
+            AlertDialog dialog = builder.create();
+            dialog.show();
+
+            return;
+        }
+
 
         if (zaehler * nenner != 0) {
             int rest;
