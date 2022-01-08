@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btnCreateStrings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50dp"
+        android:text="Create Strings" />
+
+    <TextView
+        android:id="@+id/txtMemoryClass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="25dp"
+        android:text="Memory Class (MB): X" />
+
+    <TextView
+        android:id="@+id/txtMaxMemory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Max Memory (KB): 0" />
+
+    <TextView
+        android:id="@+id/txtTotalMemory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Total Memory (KB): 0" />
+
+    <TextView
+        android:id="@+id/txtFreeMemory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="25dp"
+        android:text="Free Memory (KB): 0" />
+
+    <TextView
+        android:id="@+id/txtMemoryConsumed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Memory Consumed (KB): 0" />
+
+</LinearLayout>
