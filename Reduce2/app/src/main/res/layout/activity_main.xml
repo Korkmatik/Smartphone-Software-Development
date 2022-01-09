@@ -17,7 +17,7 @@
         android:layout_marginLeft="40dp"
         android:layout_marginRight="40dp"
         android:ems="10"
-        android:hint="Zähler"
+        android:hint="@string/zaehler_hint"
         android:inputType="text"
         android:minHeight="48dp" />
 
@@ -25,7 +25,7 @@
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="--------------------------------------------"
+        android:text="@string/teiler"
         android:textStyle="bold"
         />
 
@@ -36,7 +36,7 @@
         android:layout_marginLeft="40dp"
         android:layout_marginRight="40dp"
         android:ems="10"
-        android:hint="Nenner"
+        android:hint="@string/nenner_hint"
         android:inputType="text"
         android:minHeight="48dp" />
 
@@ -44,6 +44,6 @@
         android:id="@+id/btnReduce"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Reduce" />
+        android:text="@string/reduce_btn" />
 
 </LinearLayout>

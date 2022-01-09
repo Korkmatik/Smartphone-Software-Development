@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Reduce2</string>
+    <string name="zaehler_hint"><i>Zähler</i></string>
+    <string name="teiler">--------------------------------------------</string>
+    <string name="nenner_hint"><i>Nenner</i></string>
+    <string name="reduce_btn">Reduce</string>
 </resources>
