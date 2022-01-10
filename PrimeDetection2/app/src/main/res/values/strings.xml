@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">PrimeDetection2</string>
+    <string name="txtEnterInstruction">Enter an integer > 1></string>
+    <string name="etNumberHint">Number</string>
+    <string name="btnPrimeCheck">Prime Check</string>
+    <string name="is_prime">is a prime.</string>
+    <string name="divisor">divisor:</string>
+    <string name="not_prime">is not a prime</string>
+    <string name="not_integer">is not an integer</string>
+</resources>
