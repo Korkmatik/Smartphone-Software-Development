@@ -3,8 +3,9 @@
     <string name="txtEnterInstruction">Enter an integer > 1></string>
     <string name="etNumberHint">Number</string>
     <string name="btnPrimeCheck">Prime Check</string>
-    <string name="is_prime">is a prime.</string>
+    <string name="is_prime">is a prime.\n\nhttps://de.wikipedia.org/wiki/Primzahl</string>
     <string name="divisor">divisor:</string>
-    <string name="not_prime">is not a prime</string>
+    <string name="not_prime">is not a prime\n\nhttps://de.wikipedia.org/wiki/Primzahl</string>
     <string name="not_integer">is not an integer</string>
+    <string name="descriptionPrimeNumberInput">Eingabemöglichkeit für eine Primzahl</string>
 </resources>
