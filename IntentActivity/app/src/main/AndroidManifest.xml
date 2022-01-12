@@ -11,7 +11,9 @@
         android:theme="@style/Theme.IntentActivity">
         <activity
             android:name=".SecondaryActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:label="@string/second_activity_title"
+            android:parentActivityName=".MainActivity" />
         <activity
             android:name=".MainActivity"
             android:exported="true">

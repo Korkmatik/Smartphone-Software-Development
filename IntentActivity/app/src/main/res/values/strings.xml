@@ -1,3 +1,6 @@
 <resources>
     <string name="app_name">IntentActivity</string>
+    <string name="second_activity_title">Second Activity</string>
+    <string name="btn_start_second_activity">Start Second Activity</string>
+    <string name="empty_text_view">-</string>
 </resources>
