@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Explizites Intent mit Rückmeldung</string>
+    <string name="second_activity_title">Second Activity</string>
+    <string name="send">Send</string>
+    <string name="name">Name</string>
+    <string name="no_msg_parent">Did not get any message from parent activity!</string>
+    <string name="message_hint">Message</string>
+    <string name="error_second_activity">Error in second Activity</string>
+    <string name="result">Result</string>
+    <string name="hello_first_activity">Hello from the first Activity!</string>
+</resources>
