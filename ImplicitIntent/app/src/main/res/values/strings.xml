@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Implicit Intent</string>
+    <string name="open_hs_kempten">www.hs-kempten.de</string>
+    <string name="choose_browser">Choose your browser</string>
+    <string name="contacts">Contacts</string>
+    <string name="settings">Settings</string>
+</resources>
