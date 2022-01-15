@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">SpinnerDemo</string>
+
+    <string-array name="cars">
+        <item>Audi</item>
+        <item>Mercedes-Benz</item>
+        <item>BMW</item>
+        <item>Volkswagen</item>
+        <item>Opel</item>
+        <item>Ford</item>
+        <item>Mazda</item>
+    </string-array>
+</resources>
